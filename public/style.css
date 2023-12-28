@@ -1,0 +1,207 @@
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.searchDiv {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 5px;
+}
+
+.navigationButton {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 5px;
+}
+
+.action-link {
+    margin-right: 8px;
+}
+
+.product-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 5px;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.product-card .product-card-content {
+    height: 350px;
+    padding: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h1 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product-card .price {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.product-edit-button {
+    background-color: #007ace;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-delete-button:hover {
+    background-color: #3f4eae;
+}
+
+.product-delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.product-card-footer{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: default;
+}
+
+.product-card-footer button{
+   margin: 2px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #f2f2f2;
+}
+
+.pagination .active span {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product-card-text {
+    line-height: 1.6;
+    color: #555;
+}
+
+.product-card-text strong {
+    color: #000;
+}
+
+.product-tag {
+    display: inline-block;
+    margin: 4px;
+    padding: 6px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+}
