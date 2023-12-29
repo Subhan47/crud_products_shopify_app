@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware(['verify.shopify'])->group(function () {
+Route::middleware(['verify.shopify', 'billable'])->group(function () {
     // Home Route, calls the index method of ProductController
     Route::get('/',[ProductController::class, 'index'])->name('home');
 
